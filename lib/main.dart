@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/LoginScreen.dart';
+import 'package:travel_app/project.dart';
+import 'package:travel_app/project2.dart';
+import 'package:travel_app/project3.dart';
 import 'package:travel_app/start_screen.dart';
 import 'package:travel_app/tourism.dart';
 
@@ -19,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home:SelectCountry()
+    home:project3()
     );
   }
 }

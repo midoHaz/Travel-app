@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/LoginScreen.dart';
+import 'package:travel_app/start_screen.dart';
+import 'package:travel_app/tourism.dart';
 
 import 'HomeScreen.dart';
+import 'countery.dart';
 import 'mainHomeScreen.dart';
 
 void main() {
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home:MainHomeScreen()
+    home:SelectCountry()
     );
   }
 }

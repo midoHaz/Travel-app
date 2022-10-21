@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget defaultButton({
@@ -19,7 +20,7 @@ Widget defaultButton({
         onPressed: () {
           function!();
         },
-        child: Icon(icon),
+        child: Icon(icon,color: Colors.white,),
       ),
     );
 Widget defaultoButton({
@@ -49,6 +50,7 @@ Widget defaultoButton({
     );
 
 Widget defaultFormFieldo({
+  required Function? validate,
   required TextEditingController control,
   Function? onsubmitt,
   Function? onchange,
@@ -66,6 +68,9 @@ Widget defaultFormFieldo({
           boxShadow: [BoxShadow(color:Colors.white24,offset: Offset.infinite,blurRadius: 3.0)]
       ),
       child: TextFormField(
+        validator: (value) {
+          return validate!(value);
+        },
         controller: control,
         onFieldSubmitted: (value) {
           onsubmitt!(value);
@@ -163,3 +168,64 @@ Widget defaultaButton({
         ),
       ),
     );
+
+// Widget FormFieldLogin(
+// {
+//   required String label,
+//   required Function? validate,
+//   required TextEditingController control,
+//   required TextInputType? type,
+//   bool isPassword = false,
+//   Function? ontap,
+//   required String hint,
+// }
+//     )=>
+//     Container(
+//       padding: const EdgeInsets.symmetric(horizontal: 16.0),
+//       decoration:BoxDecoration(
+//         gradient:const  LinearGradient(
+//           colors: [Color(0xFFe6dfd8), Color(0xFFf7f5ec)],
+//           begin: Alignment.topCenter,
+//           end: Alignment.bottomCenter,
+//         ),
+//         borderRadius: BorderRadius.circular(30.0)
+//       ),
+//       child: TextFormField(
+//         validator: (value) {
+//           return validate!(value);
+//         },
+//         controller: control,
+//         keyboardType: type,
+//         onTap: () {
+//           ontap!();
+//         },
+//         obscureText: isPassword,
+//         decoration:InputDecoration(
+//           border: InputBorder.none,
+//           hintText:hint,
+//           labelText:label ,
+//         ),
+//       ),
+//     );
+
+Widget CountryFlag(context,{
+  required String path,
+  required Widget Page,
+})=>Container(
+  width: 80,
+  height: 80,
+  decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(25),
+    border:Border.all(color: Colors.orangeAccent,width: 2.0)
+  ),
+  child: Padding(
+    padding: const EdgeInsets.all(5.0),
+    child: ClipRRect(
+        borderRadius: BorderRadius.circular(25),
+        child: InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Page));
+            },
+            child: Image.asset(path))),
+  ),
+);

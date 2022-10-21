@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class TourismScreen extends  StatelessWidget {
+class FranceTourism extends StatelessWidget {
+  const FranceTourism({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,14 +10,13 @@ class TourismScreen extends  StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: const AssetImage(
-                'assets/images/castle.jpg',
-            ),
-            colorFilter:ColorFilter.mode(Colors.black.withOpacity(0.3), BlendMode.dstATop) ,
-            fit: BoxFit.cover,
-          )
+        decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(
+                'assets/images/louvre.jpeg',
+              ),
+              fit: BoxFit.cover,
+            )
         ),
         child: SingleChildScrollView(
           child: Padding(
@@ -65,7 +66,7 @@ class TourismScreen extends  StatelessWidget {
                     ),
                     const CircleAvatar(
                       radius: 18,
-                      backgroundImage: AssetImage('assets/images/es.jpg'),
+                      backgroundImage: AssetImage('assets/images/me.jpg'),
                     ),
                   ],
                 ),
@@ -80,7 +81,7 @@ class TourismScreen extends  StatelessWidget {
                       const [
                         CircleAvatar(
                           radius: 18,
-                          backgroundImage: AssetImage('assets/images/es.jpg'),
+                          backgroundImage: AssetImage('assets/images/me.jpg'),
                         ),
                         SizedBox(
                           height: 20,
@@ -89,7 +90,7 @@ class TourismScreen extends  StatelessWidget {
                           radius: 18,
                           backgroundColor: Colors.white,
                           child:Icon(Icons.favorite_border,
-                          color: Colors.deepOrange,) ,
+                            color: Colors.deepOrange,) ,
                         ),
                         SizedBox(
                           height: 20,
@@ -113,7 +114,7 @@ class TourismScreen extends  StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Text(
-                          'Ziad Sauced',
+                          'Mohamed hamza',
                           style: TextStyle(
                             fontSize: 25,
                             color: Colors.white,
@@ -124,7 +125,7 @@ class TourismScreen extends  StatelessWidget {
                           height: 5,
                         ),
                         Text(
-                          'Castle is the most beautiful place',
+                          'Louvre is the most beautiful place',
                           style: TextStyle(
                             fontSize: 18,
                             color: Colors.grey,
@@ -152,60 +153,60 @@ class TourismScreen extends  StatelessWidget {
       ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(
-            right: 30,
-            left: 30,
+          right: 30,
+          left: 30,
           bottom: 10,
         ),
         child: Container(
           clipBehavior: Clip.hardEdge,
-        decoration: const BoxDecoration(
-        borderRadius: BorderRadius.only(
-            topRight: Radius.circular(80),
-            topLeft: Radius.circular(80),
-            bottomLeft:Radius.circular(80),
-          bottomRight:Radius.circular(80),
-        ),
-        ),
-    child: BottomAppBar(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children:
-        [
-          IconButton(
-              onPressed: (){},
-              icon: const Icon(
-                Icons.home,
-                color: Colors.deepOrange,
-                size: 25,
-              ),
-          ),
-          IconButton(
-            onPressed: (){},
-            icon: const Icon(
-              Icons.wallet_giftcard_outlined,
-              color: Colors.deepOrange,
-              size: 25,
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(80),
+              topLeft: Radius.circular(80),
+              bottomLeft:Radius.circular(80),
+              bottomRight:Radius.circular(80),
             ),
           ),
-          IconButton(
-            onPressed: (){},
-            icon: const Icon(
-              Icons.favorite_border,
-              color: Colors.deepOrange,
-              size: 25,
+          child: BottomAppBar(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children:
+              [
+                IconButton(
+                  onPressed: (){},
+                  icon: const Icon(
+                    Icons.home,
+                    color: Colors.deepOrange,
+                    size: 25,
+                  ),
+                ),
+                IconButton(
+                  onPressed: (){},
+                  icon: const Icon(
+                    Icons.wallet_giftcard_outlined,
+                    color: Colors.deepOrange,
+                    size: 25,
+                  ),
+                ),
+                IconButton(
+                  onPressed: (){},
+                  icon: const Icon(
+                    Icons.favorite_border,
+                    color: Colors.deepOrange,
+                    size: 25,
+                  ),
+                ),
+                IconButton(
+                  onPressed: (){},
+                  icon: const Icon(
+                    Icons.search_outlined,
+                    color: Colors.deepOrange,
+                    size: 25,
+                  ),
+                ),
+              ],
             ),
           ),
-          IconButton(
-            onPressed: (){},
-            icon: const Icon(
-              Icons.search_outlined,
-              color: Colors.deepOrange,
-              size: 25,
-            ),
-          ),
-        ],
-      ),
-    ),
         ),
       ),
     );

@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/Greece/WelcomeGreece.dart';
+import 'package:travel_app/france/WelcomeFrance.dart';
+import 'package:travel_app/shared/components.dart';
+
+import 'Egypt/WelcomeEgypt.dart';
 
 class SelectCountry extends  StatelessWidget {
   @override
@@ -289,418 +294,126 @@ class SelectCountry extends  StatelessWidget {
                       ),
                     ],
                   ),
+                  // ListView.separated(itemBuilder: (context, index) =>  Container(
+                  //   width: 80,
+                  //   height: 80,
+                  //   decoration: BoxDecoration(
+                  //     borderRadius: BorderRadius.circular(25),
+                  //     color: Colors.orangeAccent,
+                  //   ),
+                  //   child: Padding(
+                  //     padding: const EdgeInsets.all(5.0),
+                  //     child: ClipRRect(
+                  //         borderRadius: BorderRadius.circular(25),
+                  //         child: InkWell(onTap: (){
+                  //           Navigator.push(context, MaterialPageRoute(builder: (context)=>project3()));
+                  //         },
+                  //             child: Image.asset('assets/images/egypt.jpg'))),
+                  //   ),
+                  // ),
+                  //   separatorBuilder:(context,index)=>const SizedBox(
+                  //      height: 15,
+                  //       ),
+                  //  itemCount:15),
+
+
                   Column(
-                    children: 
-                    [
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                    children: [
+                      CountryFlag(context, path: 'assets/images/egypt.jpg', Page: project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/egypt.jpg', Page: project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/egypt.jpg', Page: project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/egypt.jpg', Page: project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/egypt.jpg', Page: project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/egypt.jpg', Page: project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/egypt.jpg', Page: project3()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/egypt.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/egypt.jpg', Page: project3()),
                     ],
                   ),
                   Column(
-                    children:
-                    [
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                    children: [
+                      CountryFlag(context, path: 'assets/images/france.jpg', Page: WelcomeEgypt()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/france.jpg', Page:WelcomeEgypt()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/france.jpg', Page: WelcomeEgypt()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/france.jpg', Page: WelcomeEgypt()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/france.jpg', Page: WelcomeEgypt()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/france.jpg', Page: WelcomeEgypt()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/france.jpg', Page: WelcomeEgypt()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/france.jpg')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/france.jpg', Page: WelcomeEgypt()),
                     ],
                   ),
                   Column(
-                    children:
-                    [
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                    children: [
+                      CountryFlag(context, path: 'assets/images/greece.jpeg', Page: WelcomeGreece()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/greece.jpeg', Page: WelcomeGreece()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/greece.jpeg', Page: WelcomeGreece()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/greece.jpeg', Page: WelcomeGreece()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/greece.jpeg', Page: WelcomeGreece()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/greece.jpeg', Page: WelcomeGreece()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/greece.jpeg', Page: WelcomeGreece()),
                       const SizedBox(
                         height: 15,
                       ),
-                      Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          color: Colors.orangeAccent,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(25),
-                              child: Image.asset('assets/images/flag_01.png')),
-                        ),
-                      ),
+                      CountryFlag(context, path: 'assets/images/greece.jpeg', Page: WelcomeGreece()),
                     ],
                   ),
                 ],

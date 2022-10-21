@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/Logining/LoginScreen.dart';
 import 'package:travel_app/shared/components.dart';
+import 'package:travel_app/startup/ThirdScreen.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +20,9 @@ class HomeScreen extends StatelessWidget {
             ),
             Row(
               children: [
-                IconButton(onPressed: (){}, icon:const Icon(Icons.arrow_back_ios,color: Colors.orangeAccent,)),
+                IconButton(onPressed: (){
+                  Navigator.pop(context);
+                }, icon:const Icon(Icons.arrow_back_ios,color: Colors.orangeAccent,)),
                const  SizedBox(width: 60.0),
                 Container(
                   height: 70.0,
@@ -55,26 +63,27 @@ class HomeScreen extends StatelessWidget {
             Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  CircleAvatar(
-                    radius: 5.0,
-                    backgroundColor: Colors.grey,
-                  ),
-                  SizedBox(width: 9.0,),
-                  CircleAvatar(
-                    backgroundColor: Colors.orangeAccent,
-                    radius: 5.0,
-                  ),
-                  SizedBox(width: 9.0,),
-                  CircleAvatar(
-                    backgroundColor: Colors.grey,
-                    radius: 5.0,
-                  )
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(onPressed: () {},
+                      icon: const Icon(
+                        Icons.circle_outlined, color: Colors.orangeAccent, size: 15.0,)),
+
+                  const SizedBox(width: 1.0,),
+                  IconButton(onPressed: () {},
+                      icon: const Icon(
+                        Icons.circle, color:Colors.orangeAccent,
+                        size: 15.0,)),
+                  const SizedBox(width: 1.0,),
+                  IconButton(onPressed: () {},
+                      icon: const Icon(
+                        Icons.circle_outlined, color:Colors.orangeAccent,
+                        size: 15.0,)),
                 ],
               ),
             ),
             const SizedBox(
-              height: 100.0,
+              height: 50.0,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -82,11 +91,16 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   TextButton(
-                      onPressed: () {}, child: const Text('Skip',style: TextStyle(
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreenTravel()));
+                      }, child: const Text('Skip',style: TextStyle(
                     color: Colors.orangeAccent,fontSize: 20.0,decoration: TextDecoration.underline
                   ),)),
                   defaultButton(
                     icon: Icons.arrow_forward,width: 100.0,
+                    function: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>StartScreen()));
+                    }
                   )
                 ],
               ),

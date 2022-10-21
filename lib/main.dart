@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/LoginScreen.dart';
-import 'package:travel_app/project.dart';
-import 'package:travel_app/project2.dart';
-import 'package:travel_app/project3.dart';
-import 'package:travel_app/start_screen.dart';
-import 'package:travel_app/tourism.dart';
+import 'package:travel_app/Logining/LoginScreen.dart';
+import 'package:travel_app/startup/FirstScreen.dart';
+import 'package:travel_app/Logining/SignUp.dart';
+import 'package:travel_app/Egypt/WelcomeEgypt.dart';
+import 'package:travel_app/startup/ThirdScreen.dart';
+import 'package:travel_app/Egypt/EgyptTourism.dart';
 
-import 'HomeScreen.dart';
+import 'startup/SecondScreen.dart';
 import 'countery.dart';
-import 'mainHomeScreen.dart';
+import 'Egypt/EgyptHomeScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home:project3()
+    home:FirstScreen()
     );
   }
 }
